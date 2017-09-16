@@ -1,11 +1,20 @@
 {
   "name": "models",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "built/index.js",
   "typings": "definition/index",
   "license": "MIT",
   "dependencies": {
+    "@types/jasmine": "^2.6.0",
     "@types/mongoose": "^4.7.21",
+    "jasmine": "^2.8.0",
     "mongoose": "^4.11.11"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:w": "tsc -w",
+    "postinstall": "tsc",
+    "test": "jasmine --config=jasmine.json",
+    "test:w": "watch --wait=10 --interval=5 'jasmine --config=jasmine.json' built"
   }
 }

@@ -3,7 +3,7 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "module": "commonjs",
-        "rootDir": "./",
+        "rootDir": "src/",
         "target": "es6",
         "outDir": "./built",
         "sourceMap": true,
