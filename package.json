@@ -9,6 +9,7 @@
     "@types/mongoose": "^4.7.21",
     "jasmine": "^2.8.0",
     "mongoose": "^4.11.11",
+    "tslint": "^5.7.0",
     "typescript": "^2.5.2"
   },
   "scripts": {
@@ -16,6 +17,8 @@
     "build:w": "tsc -w",
     "postinstall": "yarn run build",
     "test": "jasmine --config=jasmine.json",
-    "test:w": "watch --wait=10 --interval=5 'jasmine --config=jasmine.json' built"
+    "test:w": "watch --wait=10 --interval=5 'jasmine --config=jasmine.json' built",
+    "dev": "yarn run build:w && yarn run test:w",
+    "lint": "tslint -c tslint.json -p tsconfig.json --type-check --fix"
   }
 }
