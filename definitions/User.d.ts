@@ -1,5 +1,5 @@
 /// <reference types="mongoose" />
-import * as mongoose from 'mongoose';
+import * as mongoose from "mongoose";
 export declare const UserSchema: mongoose.Schema;
 export interface IUser {
     email?: string;
