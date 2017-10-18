@@ -18,6 +18,7 @@
     "test": "jasmine --config=jasmine.json",
     "test:w": "watch --wait=10 --interval=5 'jasmine --config=jasmine.json' built",
     "dev": "yarn run build:w && yarn run test:w",
-    "lint": "tslint -c tslint.json -p tsconfig.json --type-check --fix"
+    "lint": "tslint -c tslint.json -p tsconfig.json --type-check --fix",
+    "declaration": "tsc --declaration"
   }
 }
